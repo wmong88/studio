@@ -1,0 +1,11 @@
+button{
+    width: 100%;
+}
+
+.bg-cover-img {
+    background-image: url('/assets/image/studio-reservation/studio.jpg');
+}
+
+.align-items-center{
+    height: 100%;
+}

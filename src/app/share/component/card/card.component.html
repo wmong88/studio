@@ -1,0 +1,36 @@
+<h3>{{title}}</h3>
+<div>Sort by&nbsp;&nbsp;
+    <span class="text-primary cursor" (click)="sort('title')">
+        Series 
+        <app-icon-sort-alpha-down *ngIf="sortOrder === 'asc' && category==='title'"></app-icon-sort-alpha-down>
+        <app-icon-sort-alpha-up *ngIf="sortOrder === 'desc' && category==='title'"></app-icon-sort-alpha-up>
+    </span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <span class="text-primary cursor" (click)="sort('brand')">
+        Brand 
+        <app-icon-sort-alpha-down *ngIf="sortOrder === 'asc' && category==='brand'"></app-icon-sort-alpha-down>
+        <app-icon-sort-alpha-up *ngIf="sortOrder === 'desc' && category==='brand'"></app-icon-sort-alpha-up>
+    </span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <span class="text-primary cursor" (click)="sort('type')">
+        Type 
+        <app-icon-sort-alpha-down *ngIf="sortOrder === 'asc' && category==='type'"></app-icon-sort-alpha-down>
+        <app-icon-sort-alpha-up *ngIf="sortOrder === 'desc' && category==='type'"></app-icon-sort-alpha-up>
+    </span>
+</div>
+<br>
+
+<div class="row row-cols-1 row-cols-md-3">
+    <div class="col mb-4" *ngFor="let item of items | sortBy:sortOrder:category">
+      <div class="card h-100">
+        <img src="./assets/image/collection/guitar/{{item.filename}}.png" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h4 class="card-title">{{item.title}}</h4>
+            <p class="card-desc">{{item.desc}}</p>
+        </div>
+        <div class="card-footer">
+            <small><i>{{item.typeLabel}} by</i> </small><span> {{item.brand}}</span>
+        </div>
+      </div>
+    </div>
+</div>

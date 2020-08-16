@@ -1,0 +1,5 @@
+footer{
+    margin-top: 3em;
+    background-color:var(--gray-dark);
+    color: var(--white);
+}

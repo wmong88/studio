@@ -1,0 +1,74 @@
+[
+    {
+        "id":"1",
+        "title":"Affinity Stratocaster HSS",
+        "desc":"The Affinity Series Stratocaster HSS delivers solid sound and style with single-coil and humbucking pickups, a two-color headstock logo, single-ply platinum sparkle pickguard and eye-catching finishes.",
+        "filename":"squier-affinity-stratocaster-hss",
+        "brand":"Squier",
+        "type":"electric-guitar",
+        "typeLabel":"Electric guitar"
+    },
+    {
+        "id":"2",
+        "title":"Casino Hollowbody",
+        "desc":"The Epiphone Casino still has the same classic look, sound, and features that have made it the go-to guitar for two generations of artists including Paul McCartney, Paul Weller, Noel Gallagher, Keith Richards and Gary Clark, Jr.",
+        "filename":"epiphone-casino-hollowbody",
+        "brand":"Epiphone",
+        "type":"electric-guitar",
+        "typeLabel":"Electric guitar"
+    },
+    {
+        "id":"3",
+        "title":"Joe Pass Emperor-II Pro",
+        "desc":"The classic Epiphone Joe Pass Emperor-II PRO honours the President of Bebop Guitar, one of the most prolific and groundbreaking guitarists in the history of jazz.",
+        "filename":"epiphone-joe-pass-emperor-ii-pro",
+        "brand":"Epiphone",
+        "type":"electric-guitar",
+        "typeLabel":"Electric guitar"
+    },
+    {
+        "id":"4",
+        "title":"JS Series Spectra JS2",
+        "desc":"The Spectra Bass JS2 provides a sound that is as unique as the bassist playing it. Whether it be funk, hard rock or gospel, a colossal Jackson J-style bridge pickup and P-style neck pickup deliver a range of punchy growls.",
+        "filename":"jackson-js-series-spectra-js2",
+        "brand":"Jackson",
+        "type":"bass-guitar",
+        "typeLabel":"Bass guitar"
+    },
+    {
+        "id":"5",
+        "title":"Rithimi",
+        "desc":"The Rithimic bass is a collaboration between Cort and Bass Artist Jeff Berlin who has an illustrious career in the music scene. The bass incorporates a unique look with the top wood combination, with Berlin's own take and recipe on the soapbar pickup.",
+        "filename":"cort-rithimi",
+        "brand":"Cort",
+        "type":"bass-guitar",
+        "typeLabel":"Bass guitar"
+    },
+    {
+        "id":"6",
+        "title":"CC-60SCE Concert",
+        "desc":"The smaller concert-sized body is comfortable in any playing position, while the single-cutaway body provides easy access to the upper frets. Featuring a solid spruce top for increased volume and crisp sound, mahogany back and sides, and easy-to-play neck.",
+        "filename":"fender-cc-60sce-concert",
+        "brand":"Fender",
+        "type":"acoustic-guitar",
+        "typeLabel":"Acoustic guitar"
+    },
+    {
+        "id":"7",
+        "title":"Baby Taylor-e",
+        "desc":"Taylor Swift reminisced of her early days writing songs out of her own Baby Taylor, and went on to collaborate with Taylor Guitars to come up with her very own Signature model.",
+        "filename":"taylor-baby-taylor-e",
+        "brand":"Taylor",
+        "type":"acoustic-guitar",
+        "typeLabel":"Acoustic guitar"
+    },
+    {
+        "id":"8",
+        "title":"California Newporter Classic Medium-Sized",
+        "desc":"The fully-painted solid Sitka spruce top and natural solid mahogany back and sides, as well as a matching painted 6-in-line headstock and koa binding and rosette grant it an elegant two-toned aesthetic that was designed for performing.",
+        "filename":"fender-california-newporter-classic-medium-sized",
+        "brand":"Fender",
+        "type":"acoustic-guitar",
+        "typeLabel":"Acoustic guitar"
+    }
+]

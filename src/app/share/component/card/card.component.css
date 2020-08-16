@@ -1,0 +1,21 @@
+.card-body{
+   background-color: var(--gold);
+   color: var(--dark);
+}
+
+.card-title{
+    color: var(--light);
+}
+
+.card-desc{
+    color: var(--gray-dark);
+}
+
+.card-footer{
+    background-color: var(--gold);
+    color: var(--light);
+}
+
+.cursor:hover{
+    cursor: pointer;
+}

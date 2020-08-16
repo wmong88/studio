@@ -1,0 +1,68 @@
+<div class="bg-cover-img">
+    <div class="d-flex justify-content-end align-items-center">
+
+        <div class="col-md-5 col-sm-12">
+            <br>
+            <h1>Studio Reservation</h1>
+            <p>We offer free studio rental for new customers.</p>
+            <br>
+        
+            <form [formGroup]="registrationForm" (ngSubmit)="onSubmit()">
+                <div class="form-row">
+                    <div class="form-group col-sm-12">
+                        <label for="inputAddress">Name <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" formControlName="name">
+                        <div class="text-danger" *ngIf="(name.dirty || name.touched) && name.invalid && name.errors.required">
+                            Name is required.
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-12">
+                        <label for="inputAddress">Email <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" formControlName="email">
+                        <div *ngIf="(email.dirty || email.touched)">
+                            <div class="text-danger" *ngIf="(email.dirty || email.touched) && email.invalid && email.errors.required">
+                                Email is required.
+                            </div>
+                            <div class="text-danger" *ngIf="(email.dirty || email.touched) && email.invalid && !email.errors.required">
+                                Email is invalid.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-12">
+                        <label for="inputAddress">Contact Number <span class="text-danger">*</span></label>
+                        <input type="text" class="form-control" formControlName="contact">
+                        <div *ngIf="(contact.dirty || contact.touched)">
+                            <div class="text-danger" *ngIf="contact.invalid && contact.errors.required">
+                                Contact Number is required.
+                            </div>
+                            <div class="text-danger" *ngIf="contact.invalid && !contact.errors.required && contact.errors.invalidNumber">
+                                Only number is allowed.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-12">
+                        <label for="inputAddress">Group size <span class="text-danger">*</span></label>
+                        <select class="form-control" formControlName="groupSize">
+                            <option *ngFor="let list of studioList" id="{{list.id}}">{{list.description}}</option>
+                        </select>
+                        <div class="text-danger" *ngIf="(groupSize.dirty || groupSize.touched) && groupSize.invalid && groupSize.errors.required">
+                            Group size is required.
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="form-row">
+                    <button type="submit" class="btn btn-warning mx-auto" [disabled]="!registrationForm.valid">Send</button>
+                </div>
+            </form>
+            <br>
+        </div>
+
+    </div>
+</div>
